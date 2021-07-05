@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personas y reloj</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+
+</head>
+
+<body onload="mostrarPersonas ()">
+    <div class='contenedor' id='cabecero'>
+        <h1>Listado de Personas</h1>
+    </div>
+
+    <div class='contenedor '>
+        <div class='elemento'>
+            <ul id='personas'>
+                <!--<li>Johana Rios</li>-->
+            </ul>
+        </div>
+    </div>
+
+    <!--<shortcut para agregar div class contenedor: .contenedor + tab, contenedor para gregar un nuevo en la lista-->
+    <div class="contenedor">
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="agregarPersona()">+</button>
+        </div>
+        <!--formulario sin el boton dentto de este-->
+        <form id='forma'>
+            <input type="text" id='nombre' placeholder="Nombre" />
+            <input type='text' id='apellido' placeholder="Apellido" />
+
+        </form>
+    </div>
+
+    <div id="reloj">
+        <div class="reloj-contenedor" id='contenedor'>
+            <div id="hora">Reloj Digital</div>
+            <div id="fecha">con Javascript</div>
+
+        </div>
+
+
+
+        <script src=' js/persona.js '></script>
+        <script src='js/app.js '></script>
+        <script src='js/reloj.js '></script>
+
+</body>
+
+</html>
